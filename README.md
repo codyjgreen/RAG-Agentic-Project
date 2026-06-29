@@ -34,6 +34,16 @@ The app idea is the vehicle, not the destination. Nobody expects a polished prod
 
 > **Why this shape?** Consuming a RAG service and building an agent on top of it is closer to real AI-engineering work than hand-rolling retrieval — and it puts your four weeks where the job market is: agents and observability.
 
+### Skills & outcomes
+
+By the end, you'll have practiced:
+
+- **AI engineering:** building a real AI agent — tool calling, the reasoning loop, guardrails, and the habit of *evaluating and observing* an AI system instead of vibe-checking it.
+- **Teamwork:** collaborating on a shared codebase with rotating roles and agile ceremonies (standups, planning, retros).
+- **SDLC:** running a full development lifecycle — scoped issues, a definition of done, CI with tests, and shipping a working MVP under a deadline.
+- **Git:** a professional workflow — feature branches, small reviewed pull requests, and giving and receiving code review.
+- **Career/portfolio:** a demonstrable project — repo, demo recording, and observability logs — plus the stories to speak to it credibly in interviews.
+
 ---
 
 ## 2. Why an agent, and how it works
