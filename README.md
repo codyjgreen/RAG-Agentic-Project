@@ -4,7 +4,7 @@
 
 **Who this is for:** Apprentices who have just finished the Software Engineering program and are about to start the AI Data Science program. This four-week group project is a visible way to show you're integrating AI into your learning, while practicing a professional software development lifecycle (SDLC) and Git workflow.
 
-**How to use this repo:** Fork or clone it. The README is your requirements doc and definition of "done." [`CONTRIBUTING.md`](./CONTRIBUTING.md) is your Git and team workflow. [`docs/anythingllm-setup.md`](./docs/anythingllm-setup.md) tells you how to stand up the RAG service you'll build against.
+**How to use this repo:** This is a *starter template*. Once your team is formed, create your own copy to work in (see [Set up your team's repo](#set-up-your-teams-repo-do-this-first)) — don't commit to this shared starter. The README is your requirements doc and definition of "done." [`CONTRIBUTING.md`](./CONTRIBUTING.md) is your Git and team workflow. [`docs/anythingllm-setup.md`](./docs/anythingllm-setup.md) tells you how to stand up the RAG service you'll build against.
 
 ---
 
@@ -84,6 +84,17 @@ The stack is flexible, but this is what we recommend and support. Don't burn thr
 
 ## 4. Quick start
 
+### Set up your team's repo (do this first)
+
+Before anyone clones anything, **one teammate creates the repository your team will actually work in** — you don't all commit to this shared starter.
+
+1. **One person creates the team repo from this starter.** Easiest path: on this repo's GitHub page click **"Use this template" → Create a new repository**. If that button isn't there, ask your mentor to enable it (note below) or **Fork** this repo instead. Name it for your team/project.
+2. **Add your teammates as collaborators** — the new repo's **Settings → Collaborators**.
+3. **Protect `main`** — **Settings → Branches → Add branch protection rule**: require a pull request with at least one approving review before merging. (Full rationale in [`CONTRIBUTING.md`](./CONTRIBUTING.md).)
+4. **Everyone else clones the team repo** — that's the `git clone` in step 1 below.
+
+> **Mentors:** to give students the "Use this template" button, open this starter repo's **Settings** and tick **Template repository**.
+
 > Prerequisites: [Docker](https://www.docker.com/) (for AnythingLLM), [Node.js](https://nodejs.org/) (18+), [Python](https://www.python.org/) (3.11+), and [Ollama](https://ollama.com/download) — installed locally.
 
 ```bash
@@ -94,7 +105,7 @@ docker run -d -p 3001:3001 \
   -v anythingllm_storage:/app/server/storage \
   --name anythingllm mintplexlabs/anythingllm
 
-# 1. Clone your team's repo (Project 2)
+# 1. Clone your team's repo (the one you created above) (Project 2)
 git clone <your-team-repo-url>
 cd <your-team-repo>
 
@@ -255,7 +266,7 @@ Record every run in `docs/eval.md` so you can show progress over time — that "
 
 | Day | Focus | Outcome |
 |-----|-------|---------|
-| 1 | Kickoff, team norms, pick project, problem statement; learn the agent loop | Repo + README started, roles assigned |
+| 1 | Kickoff, team norms, **create your team repo from this template + protect `main`**, pick project, problem statement | Team repo created with branch protection; roles assigned |
 | 2 | Stand up AnythingLLM, load `sample-data/`, get an API key, explore its API; **start from `docs/seed-issues.md`** | RAG service answers a test query via curl; backlog on the board |
 | 3 | Scaffold Flask + React; implement `search_knowledge` calling AnythingLLM | Backend returns a grounded answer from the knowledge service |
 | 4 | First agent loop: model picks `search_knowledge`, calls it, answers (single tool, single step ok) | Goal in → tool call → answer, locally |
